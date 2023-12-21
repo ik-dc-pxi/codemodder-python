@@ -5,6 +5,7 @@ from textwrap import dedent
 
 
 class TestNameResolutionMixin:
+    
     def test_get_parent(self):
         class TestCodemod(Codemod, AncestorPatternsMixin):
             def transform_module_impl(self, tree: cst.Module) -> cst.Module:
